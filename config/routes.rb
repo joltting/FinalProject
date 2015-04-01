@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+  get 'evaluation/index'
+
+  resources :assignments
+
+  resources :problems
+
+  resources :groups
+
+  resources :active_classes
+
+  resources :team_lists
+
+  resources :users
+
+  root 'evaluation#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
